@@ -1,0 +1,30 @@
+.animationblock{
+	
+}
+.backgroundimg{
+	width: 1520px;
+	height: 950px;
+	position: relative;
+}
+.dd{
+	width: 250px;
+	position: absolute;
+	bottom: 400PX;
+	right: 50PX;
+	animation: img 20s linear; infinite ;
+	transition-timing-function: linear;
+}
+@keyframes img{
+	0%{right: 25%;}
+	25%{right: 50%;}
+	50%{right: 75%;}
+	100%{right: 100%;}
+}
+.fish{
+	bottom: 1px;
+	position: absolute;
+    left: 40%;
+    width: 100px;
+    transition: all 6s linear;
+    transform: rotate(50deg);
+}
