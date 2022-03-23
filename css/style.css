@@ -2,29 +2,68 @@
 	
 }
 .backgroundimg{
-	width: 1520px;
 	height: 950px;
+	width: 100%;
 	position: relative;
 }
 .dd{
-	width: 250px;
 	position: absolute;
-	bottom: 400PX;
+	width: 250px;
+	bottom: 300PX;
 	right: 50PX;
-	animation: img 20s linear; infinite ;
-	transition-timing-function: linear;
-}
-@keyframes img{
-	0%{right: 25%;}
-	25%{right: 50%;}
-	50%{right: 75%;}
-	100%{right: 100%;}
+	animation: img 20s infinite ;
 }
 .fish{
-	bottom: 1px;
 	position: absolute;
     left: 40%;
+    bottom: 30%;
     width: 100px;
-    transition: all 6s linear;
-    transform: rotate(50deg);
+    animation: fish 15s infinite;
+}
+.fish3{
+	position: absolute;
+	width: 200px;
+	bottom: 20%;
+	left: 20%;
+	animation: fish3 10s linear infinite;
+}
+.ship{
+	position: absolute;
+	width: 50px;
+	top: 250px;
+	right: 20px;
+	animation: ship 5s infinite;
+}
+
+/*keyframes animation*/
+@keyframes img{
+	0%{right: 15%;}
+	25%{right: 30%;}
+	50%{right: 55%;}
+	75%{right: 75%;}
+	100%{right: 100%;}
+}
+@keyframes fish{
+	0%{left: 0%;}
+	20%{left: 20%;}
+	40%{left: 40%;}
+	60%{left: 60%;}
+	80%{left: 80%;}
+	100%{left: 100%;}
+}
+@keyframes fish3{
+	0%{bottom: 10%;}
+	10%{bottom: 30%;}
+	30%{bottom: 40%;}
+	50%{bottom: 50%;}
+	70%{bottom: 40%;}
+	90%{bottom: 30%;}
+	100%{bottom: 10%;}
+}
+@keyframes ship{
+	0%{right: 10%;}
+	25%{right: 25%;}
+	50%{right: 45%;}
+	75%{right: 70%;}
+	100%{right: 100%;}
 }
